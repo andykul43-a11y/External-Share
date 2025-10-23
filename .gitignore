@@ -1,0 +1,18 @@
+# User uploaded data
+Uploaded Data/*
+!Uploaded Data/.gitkeep
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.bak
