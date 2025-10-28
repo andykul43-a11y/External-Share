@@ -1,0 +1,23 @@
+{
+  "name": "capital-gains-calculator",
+  "version": 2,
+  "builds": [
+    {
+      "src": "capital-gains/**/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/capital-gains/(.*)",
+      "dest": "/capital-gains/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  }
+}
