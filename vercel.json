@@ -1,15 +1,7 @@
 {
   "name": "capital-gains-calculator",
   "version": 2,
-  "public": true,
   "buildCommand": "echo 'Static site - no build needed'",
-  "outputDirectory": "capital-gains",
   "cleanUrls": true,
-  "trailingSlash": false,
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ]
+  "trailingSlash": false
 }
