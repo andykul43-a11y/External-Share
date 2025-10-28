@@ -1,23 +1,15 @@
 {
   "name": "capital-gains-calculator",
   "version": 2,
-  "builds": [
+  "public": true,
+  "buildCommand": "echo 'Static site - no build needed'",
+  "outputDirectory": "capital-gains",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
     {
-      "src": "capital-gains/**/*",
-      "use": "@vercel/static"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
-  ],
-  "routes": [
-    {
-      "src": "/capital-gains/(.*)",
-      "dest": "/capital-gains/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    }
-  ],
-  "env": {
-    "NODE_ENV": "production"
-  }
+  ]
 }
